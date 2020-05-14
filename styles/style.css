@@ -327,3 +327,50 @@ header .heroInfo {
 #about .imgContainer {
   width: 25%;
 }
+
+#education {
+  margin: 0 auto;
+  height: 50vh;
+  line-height: 1.3;
+}
+
+#education h2 {
+  padding: 1rem 0;
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+}
+
+#education .textContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#education .textContainer div {
+  width: 50%;
+  padding: 0 5% 5% 0;
+}
+
+#education h4 {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.8rem;
+  text-align: end;
+}
+
+#education p {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+}
+
+#education span {
+  display: block;
+  text-align: end;
+}
+
+#education h5 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: end;
+}
