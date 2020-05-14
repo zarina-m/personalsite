@@ -1,0 +1,24 @@
+#about {
+    height: 50vh;
+    margin: 0 auto;
+    line-height: 1.5;
+    h2 {
+        padding: 1rem 0;
+
+        @include headingFontStyle(3rem);
+    }
+    .flexParent {
+        display: flex;
+        justify-content: space-between;
+
+    }
+    .textContainer {
+        @include bodyFontStyle(1.5rem);
+        width:50%;
+        
+    }
+    .imgContainer {
+        width:25%;
+    }
+
+}

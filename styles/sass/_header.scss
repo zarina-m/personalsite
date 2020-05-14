@@ -1,16 +1,12 @@
 header {
     height: 100vh;
-
+    text-shadow: 1px 1px 0 white;
     h1 {
         @include headingFontStyle(5rem);
     }
     span, h3 {
         @include bodyFontStyle(2rem);
         display: block;
-    }
-
-    .wrapper {
-        max-width: 1000px;
     }
 
     .imgContainer {
