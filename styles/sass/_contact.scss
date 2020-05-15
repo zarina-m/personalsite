@@ -10,7 +10,7 @@
     }
 
     .formContainer {
-        background:#E3E4E0;
+        background:#e4dfda;
         width:70%;
         padding:125px;
     }
@@ -30,6 +30,10 @@
         background: transparent;
         border-bottom: solid #222 1px;
         @include bodyFontStyle(1.5rem);
+    }
+
+    input:focus, textarea:focus {
+        background-color: rgba(250, 250, 250, 0.664);
     }
 
     textarea {
@@ -58,7 +62,7 @@
         text-decoration: none;
     }
 
-    i:hover {
+    i:hover, i:focus {
         color:#3a606e;
     }
 

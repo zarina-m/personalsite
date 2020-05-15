@@ -336,6 +336,10 @@ header .heroInfo {
   width: 25%;
 }
 
+.about .img {
+  vertical-align: none;
+}
+
 .education {
   margin: 0 auto;
   height: 75vh;
@@ -397,7 +401,7 @@ header .heroInfo {
 }
 
 .contact .formContainer {
-  background: #E3E4E0;
+  background: #e4dfda;
   width: 70%;
   padding: 125px;
 }
@@ -418,6 +422,10 @@ header .heroInfo {
   border-bottom: solid #222 1px;
   font-family: "Raleway", sans-serif;
   font-size: 1.5rem;
+}
+
+.contact input:focus, .contact textarea:focus {
+  background-color: rgba(250, 250, 250, 0.664);
 }
 
 .contact textarea {
@@ -456,7 +464,7 @@ header .heroInfo {
   text-decoration: none;
 }
 
-.contact i:hover {
+.contact i:hover, .contact i:focus {
   color: #3a606e;
 }
 
@@ -510,7 +518,7 @@ header .heroInfo {
   height: 100%;
 }
 
-.portfolio .gallery-cell:hover img, .portfolio .gallery-cell:focus img {
+.portfolio .gallery-cell:hover > img, .portfolio .gallery-cell:focus > img {
   -webkit-filter: grayscale(1) brightness(50%);
           filter: grayscale(1) brightness(50%);
 }
@@ -526,8 +534,16 @@ header .heroInfo {
   line-height: 1.5;
 }
 
-.portfolio .gallery-cell:hover .textWrapper, .portfolio .gallery-cell:focus {
+.portfolio .gallery-cell:hover .textWrapper, .portfolio .gallery-cell:focus .textWrapper,
+.portfolio .gallery-cell:hover .iconWrapper, .portfolio .gallery-cell:focus .iconWrapper {
   display: inline-block;
+}
+
+.portfolio .iconWrapper img {
+  height: 10%;
+  width: 10%;
+  -webkit-filter: none;
+          filter: none;
 }
 
 .portfolio h3 {

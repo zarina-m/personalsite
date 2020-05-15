@@ -48,9 +48,11 @@
         height:100%
     }
 
-    .gallery-cell:hover img, .gallery-cell:focus img {
+    .gallery-cell:hover > img, .gallery-cell:focus > img {
         filter:grayscale(1) brightness(50%);
     }
+
+    
 
     .textWrapper {
         position: absolute;
@@ -62,8 +64,16 @@
         line-height: 1.5;
     }
 
-    .gallery-cell:hover .textWrapper, .gallery-cell:focus {
+
+    .gallery-cell:hover .textWrapper, .gallery-cell:focus .textWrapper,
+    .gallery-cell:hover .iconWrapper, .gallery-cell:focus .iconWrapper {
         display: inline-block;
+    }
+
+    .iconWrapper img {
+        height: 10%;
+        width: 10%;
+        filter:none;
     }
 
     h3 {
