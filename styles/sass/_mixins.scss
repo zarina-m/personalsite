@@ -11,6 +11,24 @@ $headingFont: 'Playfair Display', serif;
     font-size: $sizeValue;
 }
 
+@mixin buttonLinkStyle($sizeValue) {
+    font-family: $bodyFont;
+    font-size: $sizeValue;
+    line-height: 2rem;
+    text-decoration: underline;
+    padding: .1rem;
+    margin: .5rem 0;
+    font-weight: bold;
+    color: #222;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+}
+
+@mixin buttonLinkStyleHover {
+    text-decoration: overline;
+    color:#3a606e;
+}
+
 @mixin pseudo($display: block, $pos: absolute, $content: '') {
     content: $content;
     display: $display;

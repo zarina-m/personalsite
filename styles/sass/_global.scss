@@ -7,10 +7,9 @@ html {
 }
 
 a {
-    @include bodyFontStyle(1.2rem);
-    line-height: 2rem;
-    background-color: #222;
-    color: white;
-    font-weight: 700;
-    text-shadow: none;
+    @include buttonLinkStyle(1.3rem)
+}
+
+a:hover {
+    @include buttonLinkStyleHover
 }

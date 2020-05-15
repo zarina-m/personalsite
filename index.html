@@ -17,6 +17,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
     <link rel="stylesheet" type="text/css" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/flickity.css" media="screen">
     <title>Zarina Mia | Home</title>
 </head>
 <body>
@@ -43,13 +44,13 @@
         </div>
     </header>
     <main>
-        <section id="about" class="wrapper">
+        <section id="about" class="about wrapper">
             <h2>about</h2>
 
             <div class="flexParent">
                 <div class="textContainer">
                     <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae laboriosam optio, explicabo doloribus saepe aliquid sit molestias numquam architecto ex quidem amet ut soluta, expedita illum ullam perferendis assumenda. Optio! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt enim eaque ut nulla, iusto quam ex quia soluta, similique error excepturi mollitia aliquid earum eligendi obcaecati inventore dolor consequuntur doloremque! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore maiores tempora, fugiat minima aliquam praesentium! Mollitia natus laborum, modi odit reprehenderit, ex libero esse necessitatibus aut asperiores possimus dolore culpa.
+                    I'm a web developer based in Toronto and a recent graduate of both Juno College (HackerYou) and the University of Toronto. My priorities as a programmer are cut-and-dried, with accessible, reliable, and succinct code setting the bar for how I measure my success as a developer. In my pre-webdev life I utilized my English degree to copyedit and contribute to academic literature, fine-tuning my attention to detail in the process. I wholehearedly believe in the Oxford comma and I have a penchant for (unapologetically) writing in all lowercase.
                     </p>
                 </div>
                 <div class="imgContainer">
@@ -58,26 +59,45 @@
             </div>
             <div class="flexParent">
                 <a href="#portfolio">Portfolio</a>
-                <a href="#portfolio">Contact</a>
+                <a href="#contact">Contact</a>
             </div>
         </section>
 
-        <!-- <section id="#portfolio">
-            <div>
-                <h2>Portfolio</h2>
-                <ul>
-                    <li>Project 1</li>
-                    <li>Project 2</li>
-                    <li>Project 3</li>
-                    <li>Project 4</li>
-                </ul>
+        <section id="portfolio" class="portfolio">
+            <h2 class="wrapper">portfolio</h2>
+            <div class="gallery js-flickity" data-flickity='{ "initialIndex": 1 }'>
+                <div class="gallery-cell" tabindex="0">
+                    <img src="https://picsum.photos/id/1044/700/500" alt="">
+                    <div class="textWrapper">
+                        <h3>Hungry?</h3>
+                        <p>I'm constantly reading restaurant reviews, so I built this tool to
+                        recommend restaurants based on their Yelp reviews. Dashboard style,
+                        you can view the information and ratings for multiple restaurants all in one place.</p>
+                    </div>
+                </div>
+                <div class="gallery-cell" tabindex="0"><img src="https://picsum.photos/id/1044/700/500" alt="">
+                    <div class="textWrapper">
+                        <h3>Fridge Verses</h3>
+                        <p>This sleek single-page application lets you craft fridge-magnet poems based on your desired topic, or have us randomly generate one for you. Add your poem to the gallery and easily Tweet it out for your friends to see.</p>
+                    </div>
+                </div>
+                <div class="gallery-cell" tabindex="0"><img src="https://picsum.photos/id/1044/700/500" alt="">
+                    <div class="textWrapper">
+                        <h3>Rider Radar</h3>
+                        <p>As a seasoned commuter, I took advantage of the Bike Share API to make getting around the downtown core easier. This single-page application displays important station data for the stations around your current location as well as your destination.
+                        </p>
+                    </div>
+                </div>
+                <div class="gallery-cell" tabindex="0"><img src="https://picsum.photos/id/1044/700/500" alt="">
+                    <div class="textWrapper">
+                        <h3>My Planner App</h3>
+                        <p>I created this planner to help me balance my class work with recreational activities. Local storage makes it easy to pick up where you left off.</p>
+                    </div>
+                </div>
             </div>
-            <div>
+        </section>
 
-            </div>
-        </section> -->
-
-        <section id="education" class="wrapper">
+        <!-- <section class="education wrapper">
             <h2>education</h2>
             <div class="textContainer">
                 <div>
@@ -105,16 +125,16 @@
                         expedita quibusdam dicta sunt corrupti alias deleniti voluptatem aut sapiente minus veritatis ea quasi quas.</p>
                 </div>
             </div>
-        </section>
-        <!-- <section id="Blog">
+        </section> -->
+        <!-- <section class="Blog">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit hic obcaecati, pariatur inventore dolor nesciunt quo magni quod omnis aliquid! Quasi esse molestiae, nam sit in debitis! Debitis, quasi enim?
             Officiis eius porro nesciunt obcaecati soluta accusantium ex pariatur ipsum veritatis rem sunt beatae ab voluptatum deleniti aut, exercitationem commodi placeat ut eveniet, provident quod maxime fugit, ullam quae! Maiores.
             Fuga voluptate non tempora eaque sit aliquam veritatis accusamus excepturi. Optio quod nihil esse fugiat at qui ipsum omnis repudiandae adipisci aspernatur possimus, provident unde sed earum sit, cumque veritatis?
             Assumenda qui, quae esse libero aspernatur nam quisquam eveniet veniam enim. Laboriosam, beatae eum esse voluptates molestiae architecto veritatis maiores iusto. Expedita, voluptate eius totam possimus est quaerat at obcaecati.
             Alias porro itaque ea expedita aut, dolores placeat nobis quos, beatae saepe autem eum architecto. Delectus eveniet cupiditate similique possimus libero architecto magni dolorum, optio inventore eius laborum voluptates perspiciatis?</p>
         </section> -->
-        <section id="contact" class="wrapper">
-            <div>
+        <section id="contact" class="contact wrapper">
+            <div class="formContainer">
                 <h2>let's chat</h2>
                 <form action="mailto:zarina.mia@mail.utoronto.ca" method="post" enctype="text/plain">
                     <label for="name" class="sr-only">Name</label>
@@ -131,9 +151,12 @@
                     <a href="https://github.com/zarina-m"><i class="fab fa-github-alt"></i></a>
                     <a href="mailto:someone@example.com"><i class="fas fa-envelope"></i></a>
                     <a href="https://twitter.com/ThisIsZarinaMia"><i class="fab fa-twitter"></i></a>
+                    <a href="https://medium.com/@zarinabliss"><i class="fab fa-medium-m"></i></a>
                 </ul>
             </div>
         </section>
     </main>
+<script src="./scripts/flickity.pkgd.min.js"></script>
+<script src="./scripts/script.js"></script>
 </body>
 </html>

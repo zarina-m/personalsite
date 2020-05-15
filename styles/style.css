@@ -245,12 +245,20 @@ html {
 
 a {
   font-family: "Raleway", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   line-height: 2rem;
-  background-color: #222;
-  color: white;
-  font-weight: 700;
-  text-shadow: none;
+  text-decoration: underline;
+  padding: .1rem;
+  margin: .5rem 0;
+  font-weight: bold;
+  color: #222;
+  text-transform: uppercase;
+  letter-spacing: .5rem;
+}
+
+a:hover {
+  text-decoration: overline;
+  color: #3a606e;
 }
 
 header {
@@ -297,19 +305,19 @@ header .heroInfo {
   z-index: 1;
 }
 
-#about {
+.about {
   height: 75vh;
   margin: 0 auto;
   line-height: 1.5;
 }
 
-#about h2 {
+.about h2 {
   padding: 1rem 0;
   font-family: "Playfair Display", serif;
   font-size: 3rem;
 }
 
-#about .flexParent {
+.about .flexParent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -318,29 +326,29 @@ header .heroInfo {
           justify-content: space-between;
 }
 
-#about .textContainer {
+.about .textContainer {
   font-family: "Raleway", sans-serif;
   font-size: 1.5rem;
   width: 50%;
 }
 
-#about .imgContainer {
+.about .imgContainer {
   width: 25%;
 }
 
-#education {
+.education {
   margin: 0 auto;
   height: 75vh;
   line-height: 1.3;
 }
 
-#education h2 {
+.education h2 {
   padding: 1rem 0;
   font-family: "Playfair Display", serif;
   font-size: 3rem;
 }
 
-#education .textContainer {
+.education .textContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -348,72 +356,187 @@ header .heroInfo {
       flex-wrap: wrap;
 }
 
-#education .textContainer div {
+.education .textContainer div {
   width: 50%;
   padding: 0 5% 5% 0;
 }
 
-#education h4 {
+.education h4 {
   font-family: "Raleway", sans-serif;
   font-size: 1.8rem;
   text-align: end;
 }
 
-#education p {
+.education p {
   font-family: "Raleway", sans-serif;
   font-size: 1.5rem;
 }
 
-#education span {
+.education span {
   display: block;
   text-align: end;
 }
 
-#education h5 {
+.education h5 {
   font-size: 1.5rem;
   font-weight: 700;
   text-align: end;
 }
 
-#contact {
+.contact {
   margin: 0 auto;
-  height: 50vh;
+  height: 75vh;
   line-height: 1.3;
   position: relative;
 }
 
-#contact h2 {
+.contact h2 {
   padding: 1rem 0;
   font-family: "Playfair Display", serif;
   font-size: 3rem;
 }
 
-#contact .linkContainer {
-  position: absolute;
-  bottom: 50%;
+.contact .formContainer {
+  background: #E3E4E0;
+  width: 70%;
+  padding: 125px;
 }
 
-#contact input, #contact textarea {
+.contact .linkContainer {
+  position: absolute;
+  bottom: 50%;
+  left: -3%;
+}
+
+.contact input, .contact textarea {
   width: 50rem;
   display: block;
   padding: 1%;
   margin: 2rem auto;
   border: white;
+  background: transparent;
   border-bottom: solid #222 1px;
   font-family: "Raleway", sans-serif;
   font-size: 1.5rem;
 }
 
-#contact input[type="submit"] {
-  width: 5rem;
+.contact textarea {
+  min-height: 100px;
 }
 
-#contact i {
+.contact input[type="submit"] {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-decoration: underline;
+  padding: .1rem;
+  margin: .5rem 0;
+  font-weight: bold;
+  color: #222;
+  text-transform: uppercase;
+  letter-spacing: .5rem;
+  width: 10rem;
+  text-decoration: none;
+  margin-left: 0;
+}
+
+.contact input[type="submit"]:hover {
+  text-decoration: overline;
+  color: #3a606e;
+  border-bottom: none;
+}
+
+.contact i {
   font-size: 5rem;
   color: #222;
   display: block;
 }
 
-#contact ul a {
-  background-color: transparent;
+.contact ul a {
+  text-decoration: none;
+}
+
+.contact i:hover {
+  color: #3a606e;
+}
+
+.portfolio {
+  height: 100vh;
+  /* cell number */
+}
+
+.portfolio h2 {
+  padding: 1rem 0;
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+}
+
+.portfolio .gallery {
+  background-color: white;
+}
+
+.portfolio .gallery-cell {
+  width: 45%;
+  height: 50vh;
+  margin-right: 10px;
+  counter-increment: gallery-cell;
+}
+
+.portfolio .gallery-cell:before {
+  display: block;
+  text-align: center;
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+.portfolio .flickity-page-dots {
+  bottom: -22px;
+}
+
+.portfolio body .flickity-page-dots .dot {
+  height: 4px;
+  width: 40px;
+  margin: 0;
+  border-radius: 0;
+}
+
+.portfolio .wrapper {
+  margin: 0 auto;
+}
+
+.portfolio img {
+  width: 100%;
+  height: 100%;
+}
+
+.portfolio .gallery-cell:hover img, .portfolio .gallery-cell:focus img {
+  -webkit-filter: grayscale(1) brightness(50%);
+          filter: grayscale(1) brightness(50%);
+}
+
+.portfolio .textWrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: none;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  color: white;
+  line-height: 1.5;
+}
+
+.portfolio .gallery-cell:hover .textWrapper, .portfolio .gallery-cell:focus {
+  display: inline-block;
+}
+
+.portfolio h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 5rem;
+}
+
+.portfolio p {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.5);
 }
