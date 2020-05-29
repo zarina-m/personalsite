@@ -291,7 +291,7 @@ header .imgContainer img {
 }
 
 header .imgBorder {
-  border: 15px solid black;
+  border: 1.5rem solid #e4dfda;
   display: inline-block;
 }
 
@@ -306,9 +306,9 @@ header .heroInfo {
 }
 
 .about {
-  height: 75vh;
+  height: 70vh;
   margin: 0 auto;
-  line-height: 1.5;
+  line-height: 1.8;
 }
 
 .about h2 {
@@ -333,58 +333,43 @@ header .heroInfo {
 }
 
 .about .imgContainer {
-  width: 25%;
+  width: 50%;
 }
 
 .about .img {
   vertical-align: none;
 }
 
-.education {
-  margin: 0 auto;
-  height: 75vh;
-  line-height: 1.3;
+.about p {
+  border-bottom: 1.5rem solid #e4dfda;
 }
 
-.education h2 {
+.blog {
+  height: 50vh;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.blog h2 {
   padding: 1rem 0;
   font-family: "Playfair Display", serif;
   font-size: 3rem;
 }
 
-.education .textContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+.blog .textWrapper {
+  border-top: 1.5rem solid #e4dfda;
+  border-bottom: 1.5rem solid #e4dfda;
 }
 
-.education .textContainer div {
-  width: 50%;
-  padding: 0 5% 5% 0;
-}
-
-.education h4 {
-  font-family: "Raleway", sans-serif;
-  font-size: 1.8rem;
-  text-align: end;
-}
-
-.education p {
+.blog .medium-widget-article__description, .blog .medium-widget-article__date {
   font-family: "Raleway", sans-serif;
   font-size: 1.5rem;
+  color: #222;
 }
 
-.education span {
-  display: block;
-  text-align: end;
-}
-
-.education h5 {
+.blog .medium-widget-article__author-name {
+  font-family: "Playfair Display", serif;
   font-size: 1.5rem;
-  font-weight: 700;
-  text-align: end;
 }
 
 .contact {
@@ -469,7 +454,7 @@ header .heroInfo {
 }
 
 .portfolio {
-  height: 100vh;
+  height: 85vh;
   /* cell number */
 }
 
@@ -537,6 +522,10 @@ header .heroInfo {
 .portfolio .gallery-cell:hover .textWrapper, .portfolio .gallery-cell:focus .textWrapper,
 .portfolio .gallery-cell:hover .iconWrapper, .portfolio .gallery-cell:focus .iconWrapper {
   display: inline-block;
+}
+
+.portfolio .gallery-cell:hover .iconWrapper, .portfolio .gallery-cell:focus .iconWrapper {
+  cursor: default;
 }
 
 .portfolio .iconWrapper img {

@@ -1,6 +1,6 @@
 
 .portfolio {
-    height: 100vh;
+    height: 85vh;
 
     h2 {
         padding: 1rem 0;
@@ -68,6 +68,9 @@
     .gallery-cell:hover .textWrapper, .gallery-cell:focus .textWrapper,
     .gallery-cell:hover .iconWrapper, .gallery-cell:focus .iconWrapper {
         display: inline-block;
+    }
+    .gallery-cell:hover .iconWrapper, .gallery-cell:focus .iconWrapper {
+        cursor: default;
     }
 
     .iconWrapper img {

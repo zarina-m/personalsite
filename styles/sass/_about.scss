@@ -1,7 +1,7 @@
 .about {
-    height: 75vh;
+    height: 70vh;
     margin: 0 auto;
-    line-height: 1.5;
+    line-height: 1.8;
     h2 {
         padding: 1rem 0;
         @include headingFontStyle(3rem);
@@ -9,18 +9,19 @@
     .flexParent {
         display: flex;
         justify-content: space-between;
-
     }
     .textContainer {
         @include bodyFontStyle(1.5rem);
-        width:50%;
-        
+        width:50%;    
     }
     .imgContainer {
-        width:25%;
+        width:50%;   
     }
     .img {
         vertical-align: none;
+    }
+    p {
+        border-bottom: 1.5rem solid #e4dfda;
     }
 
 }
