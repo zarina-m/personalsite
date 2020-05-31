@@ -1,0 +1,15 @@
+html {
+    font-size: 62.5%
+}
+
+.wrapper {
+    max-width: 800px;
+}
+
+a {
+    @include buttonLinkStyle(1.3rem)
+}
+
+a:hover {
+    @include buttonLinkStyleHover
+}

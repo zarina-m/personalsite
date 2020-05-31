@@ -1,0 +1,27 @@
+.blog {
+    height: 50vh;
+    margin: 0 auto;
+    line-height: 1.5;
+
+    h2 {
+        padding: 1rem 0;
+        @include headingFontStyle(3rem);
+    }
+
+    .textWrapper {
+        border-top: 1.5rem solid #e4dfda;
+        border-bottom: 1.5rem solid #e4dfda;;
+    }
+
+    a {
+        text-decoration: underline;
+    }
+    .medium-widget-article__description, .medium-widget-article__date {
+        @include bodyFontStyle(1.5rem);
+        color: #222
+    }
+
+    .medium-widget-article__author-name {
+        @include headingFontStyle(1.5rem);
+    }
+}

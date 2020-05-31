@@ -12,13 +12,17 @@
 
         gtag('config', 'UA-163502926-1');
     </script>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Raleway:wght@500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/flickity.css" media="screen">
     <title>Zarina Mia | Home</title>
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="sr-only">
             <ul>
                 <li>About</li>
                 <li>Portfolio</li>
@@ -27,98 +31,129 @@
                 <li>Contact</li>
             </ul>
         </nav>
-        <h1><span>Hi I'm </span>Zarina Mia</h1>
-        <h3>web developer</h3>
-        <a href="#contact">Contact</a>
-        <a href="blank.html" download>Download CV</a>
+        <div class="heroInfo">
+            <h1><span>hi, I'm</span>Zarina Mia</h1>
+            <h3>web developer</h3>
+            <a href="./assets/Zarina_Mia.pdf" download>Download Resume</a>
+        </div>
+        <div class="imgContainer">
+            <div class="imgBorder">
+                <img src="https://picsum.photos/seed/picsum/400/600" alt="A photograph of a snowy mountain during sunset.">
+            </div>
+        </div>
     </header>
     <main>
-        <section id="about">
-            <h2>About</h2>
-            <div>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae laboriosam optio, explicabo doloribus saepe aliquid sit molestias numquam architecto ex quidem amet ut soluta, expedita illum ullam perferendis assumenda. Optio! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt enim eaque ut nulla, iusto quam ex quia soluta, similique error excepturi mollitia aliquid earum eligendi obcaecati inventore dolor consequuntur doloremque! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore maiores tempora, fugiat minima aliquam praesentium! Mollitia natus laborum, modi odit reprehenderit, ex libero esse necessitatibus aut asperiores possimus dolore culpa.
-            </div>
-            <div>
-                <img src="https://picsum.photos/seed/picsum/200/300" alt="a photo of me">
-            </div>
-            <div>
-                <a href="#portfolio">Contact</a>
-                <a href="#portfolio">Portfolio</a>
-            </div>
-        </section>
-        <section id="#portfolio">
-            <div>
-                <h2>Portfolio</h2>
-                <ul>
-                    <li>Project 1</li>
-                    <li>Project 2</li>
-                    <li>Project 3</li>
-                    <li>Project 4</li>
-                </ul>
-            </div>
-            <div>
+        <section id="about" class="about wrapper">
+            <h2>about</h2>
 
-            </div>
-        </section>
-        <section id="#education">
-            <h2>Education</h2>
-            <div>
-                <div>
-                    <h4>Juno College</h4>
-                    <h5>Web Development Immersive Bootcamp 2020</h5>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat id asperiores quos voluptate rerum, 
-                        praesentium expedita quibusdam dicta sunt corrupti alias deleniti voluptatem aut sapiente minus veritatis ea quasi quas.</p>
+            <div class="flexParent">
+                <div class="textContainer">
+                    <p>
+                    I'm a web developer based in Toronto and a recent graduate of both Juno College (HackerYou) and the University of Toronto. My priorities as a programmer are straightforward, with accessible, reliable, and succinct code setting the bar for how I measure my success as a developer. In my pre-webdev life I utilized my English degree to copyedit and contribute to academic literature, fine-tuning my attention to detail in the process. I wholeheartedly believe in the Oxford comma and I have a penchant for (unapologetically) writing in all lowercase.
+                    </p>
                 </div>
-                <div>
-                    <h4>Juno College</h4>
-                    <h5>Acceletated Javascript 2020</h5>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat id asperiores quos voluptate rerum, praesentium 
-                        expedita quibusdam dicta sunt corrupti alias deleniti voluptatem aut sapiente minus veritatis ea quasi quas.</p>
-                </div>
-                <div>
-                    <h4>Lighthouse Labs</h4>
-                    <h5>Front End Fundamentals with JavaScript 2019</h5>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat id asperiores quos voluptate rerum, praesentium
-                        expedita quibusdam dicta sunt corrupti alias deleniti voluptatem aut sapiente minus veritatis ea quasi quas.</p>
-                </div>
-                <div>
-                    <h4>University of Toronto</h4>
-                    <h5>Honours Bachelor of Arts, Major in English and History 2014 - 2019</h5>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat id asperiores quos voluptate rerum, praesentium
-                        expedita quibusdam dicta sunt corrupti alias deleniti voluptatem aut sapiente minus veritatis ea quasi quas.</p>
+                <div class="imgContainer">
+                    <img src="assets/memoji.png" alt="A cartoon of Zarina, a brown haired girl with glasses giving a thumbs up.">
                 </div>
             </div>
         </section>
-        <section id="Blog">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit hic obcaecati, pariatur inventore dolor nesciunt quo magni quod omnis aliquid! Quasi esse molestiae, nam sit in debitis! Debitis, quasi enim?
-            Officiis eius porro nesciunt obcaecati soluta accusantium ex pariatur ipsum veritatis rem sunt beatae ab voluptatum deleniti aut, exercitationem commodi placeat ut eveniet, provident quod maxime fugit, ullam quae! Maiores.
-            Fuga voluptate non tempora eaque sit aliquam veritatis accusamus excepturi. Optio quod nihil esse fugiat at qui ipsum omnis repudiandae adipisci aspernatur possimus, provident unde sed earum sit, cumque veritatis?
-            Assumenda qui, quae esse libero aspernatur nam quisquam eveniet veniam enim. Laboriosam, beatae eum esse voluptates molestiae architecto veritatis maiores iusto. Expedita, voluptate eius totam possimus est quaerat at obcaecati.
-            Alias porro itaque ea expedita aut, dolores placeat nobis quos, beatae saepe autem eum architecto. Delectus eveniet cupiditate similique possimus libero architecto magni dolorum, optio inventore eius laborum voluptates perspiciatis?</p>
-        </section>
-        <section id="#contact">
-            <div>
-                <ul>
-                    <li>me@gmail.com</li>
-                    <li>647 - 555 - 3959</li>
-                    <li>linkedin</li>
-                    <li>github.com/zarina-m</li>
-                </ul>
+
+        <!-- <section id="portfolio" class="portfolio">
+            <h2 class="wrapper">portfolio</h2>
+            <div class="gallery js-flickity" data-flickity='{ "initialIndex": 1 }'>
+                <div class="gallery-cell" tabindex="0"><img src="assets/hungry.png" alt="A screenshot of restaurant reviews and pictures of food">
+                    <div class="textWrapper">
+                        <h3>Hungry?</h3>
+                        <p>I'm constantly reading restaurant reviews, so I built this tool to
+                        recommend restaurants based on their Yelp reviews. Dashboard style,
+                        you can view the information and ratings for multiple restaurants all in one place.</p>
+                        <div class="iconWrapper">
+                            <img src="assets/html5.svg" alt="HTML icon" title="HTML">
+                            <img src="assets/css3.svg" alt="CSS icon" title="CSS">
+                            <img src="assets/javascript.svg" alt="JavaScript icon" title="JavaScript">
+                            <img src="assets/sass.svg" alt="SASS icon" title="SASS">
+                            <img src="assets/jquery.svg" alt="jQuery icon" title="jQuery">
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="gallery-cell" tabindex="0"><img src="assets/fridgeverses.png" alt="A screenshot of drag-and-drop fridge-magnet poems">
+                    <div class="textWrapper">
+                        <h3>Fridge Verses</h3>
+                        <p>This sleek single-page application lets you craft fridge-magnet poems based on your desired topic, or have us randomly generate one for you. Drag and drop your magnets then add your poem to the gallery.  Tweet it out for your friends to see.</p>
+                        <div class="iconWrapper">
+                            <img src="assets/html5.svg" alt="HTML icon" title="HTML">
+                            <img src="assets/css3.svg" alt="CSS icon" title="CSS">
+                            <img src="assets/sass.svg" alt="SASS icon" title="SASS">
+                            <img src="assets/react.svg" alt="React icon" title="React">
+                            <img src="assets/axios.svg" alt="Axios icon" title="Axios">
+                            <img src="assets/firebase.svg" alt="Firebase icon" title="Firebase">
+                        </div>
+                    </div>
+   
+                </div>
+                <div class="gallery-cell" tabindex="0"><img src="assets/riderradar.png" alt="A screenshot of Princes Gate with a Bike Share Toronto bicycle in front">
+                    <div class="textWrapper">
+                        <h3>Rider Radar</h3>
+                        <p>As a seasoned commuter, I took advantage of the Bike Share API to make getting around the downtown core easier. This single-page application displays important station data for the stations around your current location as well as your destination.</p>
+                        <div class="iconWrapper">
+                            <img src="assets/html5.svg" alt="HTML icon" title="HTML">
+                            <img src="assets/css3.svg" alt="CSS icon" title="CSS">
+                            <img src="assets/react.svg" alt="React icon" title="React">
+                            <img src="assets/axios.svg" alt="Axios icon" title="Axios">
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="gallery-cell" tabindex="0"><img src="assets/plannerapp.png" alt="">
+                    <div class="textWrapper">
+                        <h3>My Planner</h3>
+                        <p>I created this planner to help me balance my class work with recreational activities. Local storage makes it easy to pick up where you left off.</p>
+                        <div class="iconWrapper">
+                            <img src="assets/html5.svg" alt="HTML icon" title="HTML">
+                            <img src="assets/css3.svg" alt="CSS icon" title="CSS">
+                            <img src="assets/javascript.svg" alt="JavaScript icon" title="JavaScript">
+                            <img src="assets/sass.svg" alt="SASS icon" title="SASS">
+                            <img src="assets/jquery.svg" alt="jQuery icon" title="jQuery">
+                        </div>
+                    </div>
+                    
+                </div>
             </div>
-            <div>
-                <h2>Let's chat</h2>
-                <form>
-                    <label for="name">Name</label>
-                    <input id="name" type="text"> 
-                    <label for="email">Email Address</label>
-                    <input id="email" type="email">
-                    <label for="message">Message</label>
-                    <textarea id="message"></textarea>
-                    <input type="submit" value="Send">
+        </section> -->
+        <section id="blog" class="blog wrapper">
+            <h2>blog</h2>
+            <div class="textWrapper">
+                <div id="medium-widget"></div>
+                <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
+                <script>MediumWidget.Init({ renderTo: '#medium-widget', params: { "resource": "https://medium.com/@zarinabliss", "postsPerLine": 1, "limit": 2, "picture": "none", "fields": ["description", "author", "publishAt"], "ratio": "landscape" } })</script>
+            </div>
+        </section>
+        <section id="contact" class="contact wrapper">
+            <div class="formContainer">
+                <h2>let's chat</h2>
+                <form action="https://formspree.io/xqkypoej" method="POST" target="_blank">
+                    <label for="name" class="sr-only">Name</label>
+                    <input id="name" name="name" type="text" placeholder="name"> 
+                    <label for="email" class="sr-only">Email Address</label>
+                    <input id="email" name="_replyto" type="email" placeholder="email">
+                    <label for="message" class="sr-only">Message</label>
+                    <textarea id="message" name="message" placeholder="message"></textarea>
+                    <input id="submit" type="submit">
+                    <a href="https://calendly.com/zarinamia/" target="_blank">Schedule a meeting</a>
                 </form>
             </div>
-
+            <div class="linkContainer">
+                <ul>
+                    <a href="https://github.com/zarina-m"><i class="fab fa-github-alt"></i></a>
+                    <a href="mailto:zarinabliss@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="https://twitter.com/ThisIsZarinaMia"><i class="fab fa-twitter"></i></a>
+                    <a href="https://medium.com/@zarinabliss"><i class="fab fa-medium-m"></i></a>
+                </ul>
+            </div>
         </section>
     </main>
+<script src="./scripts/flickity.pkgd.min.js"></script>
+<script src="./scripts/script.js"></script>
 </body>
 </html>
