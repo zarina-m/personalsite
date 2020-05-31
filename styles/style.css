@@ -254,10 +254,12 @@ a {
   color: #222;
   text-transform: uppercase;
   letter-spacing: .5rem;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: .1rem #222;
 }
 
 a:hover {
-  text-decoration: overline;
+  -webkit-text-fill-color: #222;
   color: #3a606e;
 }
 
@@ -275,6 +277,12 @@ header span, header h3 {
   font-family: "Raleway", sans-serif;
   font-size: 2rem;
   display: block;
+}
+
+header a {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
 }
 
 header .imgContainer {
@@ -361,6 +369,10 @@ header .heroInfo {
   border-bottom: 1.5rem solid #e4dfda;
 }
 
+.blog a {
+  text-decoration: underline;
+}
+
 .blog .medium-widget-article__description, .blog .medium-widget-article__date {
   font-family: "Raleway", sans-serif;
   font-size: 1.5rem;
@@ -415,11 +427,12 @@ header .heroInfo {
 
 .contact textarea {
   min-height: 100px;
+  resize: none;
 }
 
 .contact input[type="submit"] {
   font-family: "Raleway", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   line-height: 2rem;
   text-decoration: underline;
   padding: .1rem;
@@ -428,21 +441,23 @@ header .heroInfo {
   color: #222;
   text-transform: uppercase;
   letter-spacing: .5rem;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: .1rem #222;
   width: 10rem;
-  text-decoration: none;
+  border: none;
   margin-left: 0;
 }
 
 .contact input[type="submit"]:hover {
-  text-decoration: overline;
+  -webkit-text-fill-color: #222;
   color: #3a606e;
-  border-bottom: none;
 }
 
 .contact i {
   font-size: 5rem;
   color: #222;
   display: block;
+  font-weight: normal;
 }
 
 .contact ul a {
@@ -450,7 +465,11 @@ header .heroInfo {
 }
 
 .contact i:hover, .contact i:focus {
-  color: #3a606e;
+  -webkit-text-fill-color: #222;
+}
+
+.contact form a {
+  font-size: 1.8rem;
 }
 
 .portfolio {

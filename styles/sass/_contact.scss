@@ -37,25 +37,26 @@
     }
 
     textarea {
-        min-height: 100px;;
+        min-height: 100px;
+        resize: none;
     }
 
     input[type="submit"] {
-        @include buttonLinkStyle(1.5rem);
+        @include buttonLinkStyle(1.8rem);
         width: 10rem;
-        text-decoration: none;
+        border: none;
         margin-left:0;
     }
 
     input[type="submit"]:hover {
         @include buttonLinkStyleHover;
-        border-bottom: none;
     }
 
     i {
         font-size: 5rem;
         color:#222;
         display: block;
+        font-weight: normal;
     }
 
     ul a {
@@ -63,7 +64,11 @@
     }
 
     i:hover, i:focus {
-        color:#3a606e;
+        -webkit-text-fill-color: #222;
+    }
+
+    form a {
+        font-size: 1.8rem;
     }
 
 }

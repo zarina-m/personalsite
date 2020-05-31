@@ -9,6 +9,11 @@ header {
         display: block;
     }
 
+    a {
+        @include bodyFontStyle(1.5rem);
+        line-height: 2.5rem;
+    }
+
     .imgContainer {
         height: 100%;
         width: 50%;

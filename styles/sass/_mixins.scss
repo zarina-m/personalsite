@@ -22,10 +22,12 @@ $headingFont: 'Playfair Display', serif;
     color: #222;
     text-transform: uppercase;
     letter-spacing: .5rem;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: .1rem #222;
 }
 
 @mixin buttonLinkStyleHover {
-    text-decoration: overline;
+    -webkit-text-fill-color: #222;
     color:#3a606e;
 }
 
