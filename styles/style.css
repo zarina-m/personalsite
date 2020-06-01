@@ -308,6 +308,7 @@ header .heroInfo {
   top: 50%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
+  position: absolute;
   width: 50%;
   text-align: right;
   z-index: 1;
@@ -320,9 +321,30 @@ header .heroInfo {
 }
 
 @media only screen and (max-width: 600px) {
+  header {
+    min-height: auto;
+    height: auto;
+  }
   header .heroInfo {
     width: 100%;
     text-align: center;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+            transform: translateY(-50%) translateX(-50%);
+    left: 50%;
+  }
+  header .imgContainer {
+    width: 100%;
+  }
+  header .imgBorder {
+    width: 100%;
+  }
+  header .imgContainer img {
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  body {
+    margin: 0 2%;
   }
 }
 
@@ -388,6 +410,9 @@ header .heroInfo {
   .about .imgContainer {
     display: none;
   }
+  .about h2 {
+    margin: 10% auto;
+  }
 }
 
 .blog {
@@ -430,6 +455,18 @@ header .heroInfo {
 .blog .medium-widget-article__author-name {
   font-family: "Playfair Display", serif;
   font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .blog {
+    height: auto;
+  }
+  .blog h2 {
+    margin: 10% 0;
+  }
+  .blog .medium-widget {
+    margin-bottom: 10%;
+  }
 }
 
 .contact {
@@ -598,6 +635,10 @@ header .heroInfo {
 .portfolio img {
   max-width: 100%;
   max-height: 100%;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .portfolio .imgContainer {
