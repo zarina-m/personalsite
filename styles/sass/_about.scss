@@ -25,3 +25,34 @@
     }
 
 }
+
+@media only screen and (max-width: 900px) {
+    .about {
+
+        height: auto;
+
+        .flexParent {
+            flex-wrap: wrap;
+        }
+
+        .textContainer {
+            width: 100%;
+        }
+
+        .imgContainer {
+            margin: 0 auto;
+        }
+
+        .imgContainer img{
+            width: 100%;
+        }
+
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .about {
+        .imgContainer {
+            display: none;
+        }}
+}

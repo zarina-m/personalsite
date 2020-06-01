@@ -1,6 +1,6 @@
 .contact {
     margin: 0 auto;
-    height: 75vh;
+    height: 80vh;
     line-height: 1.3;
     position: relative;
 
@@ -71,4 +71,38 @@
         font-size: 1.8rem;
     }
 
+}
+
+@media only screen and (max-width: 900px) {
+
+    body {
+        margin: 0 5%;
+        overflow-x: hidden;
+    }
+    .contact .linkContainer {
+        left: 0%; 
+    }
+}
+@media only screen and (max-width: 700px) {
+    .contact {
+        .formContainer {
+            width: 100%;
+            padding: 5%;
+        }
+        .linkContainer {
+            position: static;
+            background-color: #e4dfda;
+        }
+        ul {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        input, textarea {
+            width: 75%;
+        }
+        form a, input[type="submit"] {
+            display: table;
+            margin: 0 auto;
+        }
+    }
 }

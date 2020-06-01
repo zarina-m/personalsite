@@ -1,7 +1,10 @@
 .blog {
-    height: 50vh;
+    height: 80vh;
     margin: 0 auto;
     line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 
     h2 {
         padding: 1rem 0;
@@ -10,7 +13,7 @@
 
     .textWrapper {
         border-top: 1.5rem solid #e4dfda;
-        border-bottom: 1.5rem solid #e4dfda;;
+        border-bottom: 1.5rem solid #e4dfda;
     }
 
     a {

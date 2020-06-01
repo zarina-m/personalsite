@@ -40,3 +40,19 @@ header {
     }
 
 }
+
+@media only screen and (max-width: 900px) {
+    header {
+        .imgContainer {
+            left: 0%;
+    }
+}}
+
+@media only screen and (max-width: 600px) {
+    header {
+        .heroInfo {
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
