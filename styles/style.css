@@ -260,7 +260,6 @@ a {
 
 a:hover {
   -webkit-text-fill-color: #222;
-  color: #3a606e;
 }
 
 header {
@@ -286,10 +285,13 @@ header a {
 }
 
 header .imgContainer {
-  height: 100%;
   width: 50%;
   left: 50%;
   position: relative;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 header .imgContainer img {
@@ -323,7 +325,6 @@ header .heroInfo {
 @media only screen and (max-width: 600px) {
   header {
     min-height: auto;
-    height: auto;
   }
   header .heroInfo {
     width: 100%;
@@ -535,7 +536,6 @@ header .heroInfo {
 
 .contact input[type="submit"]:hover {
   -webkit-text-fill-color: #222;
-  color: #3a606e;
 }
 
 .contact i {
@@ -629,7 +629,6 @@ header .heroInfo {
 
 .portfolio h3 a:hover, .portfolio h3 a:focus {
   -webkit-text-fill-color: #222;
-  color: #3a606e;
 }
 
 .portfolio img {

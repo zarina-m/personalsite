@@ -28,7 +28,6 @@ $headingFont: 'Playfair Display', serif;
 
 @mixin buttonLinkStyleHover {
     -webkit-text-fill-color: #222;
-    color:#3a606e;
 }
 
 @mixin pseudo($display: block, $pos: absolute, $content: '') {
